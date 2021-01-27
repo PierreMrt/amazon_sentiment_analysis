@@ -6,27 +6,31 @@ from model_creation.model_testing import ModelTest
 from analysis_and_visualization.data_exploration import explore_data
 
 
+TRAINING_CATEGORY = 'computers'
+TESTING_CATEGORY = 'cellphones'
+TESTED_MODEL = 'support_vector'
+
+
 def scraping():
-    scrapper = AmazonScrapper('computers', 100)
+    scrapper = AmazonScrapper(TRAINING_CATEGORY, 100)
     scrapper.navigate_amazon()
 
 
 def cleaning():
-    data_manager = DataManager('computers')
+    data_manager = DataManager(TRAINING_CATEGORY)
     data_manager.initiate_cleaning()
     new_df = data_manager.create_dataframe()
     data_manager.save_dataframe(new_df)
 
 
 def create_models():
-    models = ModelBuilder('computers').build_models()
+    models = ModelBuilder(TRAINING_CATEGORY).build_models()
     manager = ModelManager(models)
     manager.save_model()
 
 
 def test_model():
-    model_selected = '-support_vector'
-    tester = ModelTest('cellphones', model_selected)
+    tester = ModelTest(TESTING_CATEGORY, TESTED_MODEL)
     # tester.create_test_dataset()
     tester.clean_data_set()
     tester.test_model()
