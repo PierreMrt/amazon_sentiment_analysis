@@ -1,3 +1,10 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+:yellow_circle: work in progress
+
 # Amazon_sentiment_analysis
 Full sentiment analysis project, based on Amazon reviews. Training of machine learning models to be able to detect the positive or negative sentiment of a review.
 
@@ -59,8 +66,48 @@ How did each the 6 models fared ? Which one performed the best ?
 See the results here.
 
 ### Utilisation
+To Launch the initial scraping: 
+`python main.py scraping`
+
+To clean the results:
+`python main.py cleaning`
+
+To view the data analysis:
+`python main.py data_exploration`
+
+To create the classifiers:
+`python main.py create_models`
+
+To test one of the model:
+`python main.py test_model`
+
+To view the results analysis:
+`python main.py analyze_results`
 
 ### Requirements
 
-WORK STILL IN PROGRESS
+
+### License
+
+MIT License
+
+Copyright (c) [2021] [Pierre Merlet]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
