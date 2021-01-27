@@ -31,7 +31,7 @@ The first part is to create a dataset for which we already have labels (rating).
 
 Here we scraped the first 100 pages of items in the computers category of Amazon. For each of these items, we fetch the first 10 reviews of each stars, which allows us to create a dataset of almost 20 000 different reviews.
 
-More details here.
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/review_scraping)
 
 ### Data cleaning
 Once we have a large dataset, the next part is to clean it. Indeed when we work with NLP it is important to have normalized data. The main steps are as follow:
@@ -40,12 +40,12 @@ Once we have a large dataset, the next part is to clean it. Indeed when we work 
 3. Normalize the case (evry words need to be in lower case)
 4. Remove stop words
 
-More details here.
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/data_cleaning)
 
 ### Data exploration
 This part is about understanding our dataset and identify potential trends in it, in order choose the best parameters for our ML classifiers.
 
-More details here.
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization)
 
 ### Models creation and testing
 We train 6 different ML classifiers with scikit learn:
@@ -58,12 +58,12 @@ We train 6 different ML classifiers with scikit learn:
 
 Based on the preliminary results, we can then test our best model against new data, to check how it would behave in a real scenario.
 
-More details here.
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/model_creation)
 
 ### Results analysis
 How did each the 6 models fared ? Which one performed the best ?
 
-See the results here.
+[See the results here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization)
 
 ### Utilisation
 To Launch the initial scraping: 
@@ -89,25 +89,25 @@ To view the results analysis:
 
 ### License
 
-MIT License
-
-Copyright (c) [2021] [Pierre Merlet]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+>MIT License
+>
+>Copyright (c) 2021 Pierre Merlet
+>
+>Permission is hereby granted, free of charge, to any person obtaining a copy
+>of this software and associated documentation files (the "Software"), to deal
+>in the Software without restriction, including without limitation the rights
+>to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+>copies of the Software, and to permit persons to whom the Software is
+>furnished to do so, subject to the following conditions:
+>
+>The above copyright notice and this permission notice shall be included in all
+>copies or substantial portions of the Software.
+>
+>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+>IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+>FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+>AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+>LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+>OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+>SOFTWARE.
 
