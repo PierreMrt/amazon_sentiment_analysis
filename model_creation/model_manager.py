@@ -1,5 +1,7 @@
 import pickle
 
+from data_cleaning.data_cleaner import DataCleaner
+
 INPUT_PATH = 'model_creation/data/models'
 
 
@@ -20,4 +22,19 @@ class ModelManager:
         return self.existing_models
 
 
+class Model:
+    def __init__(self, name, tfidf_vectorizer):
+        self.name = name
+        self.score = 0
+        self.confusion_matrix = None
 
+        self.model = None
+        self.tfidf_vectorizer = tfidf_vectorizer
+
+        self.test_matrix = None
+        self.test_score = 0
+
+    def transform_text(self, text):
+        text = [text]
+        tfidf_text = self.tfidf_vectorizer.transform(text)
+        return tfidf_text

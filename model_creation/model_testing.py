@@ -44,18 +44,26 @@ class ModelTest:
 
         self.save_predictions(predictions)
 
+        self.model.test_score = accuracy_score(self.clean_df['sentiment'], self.clean_df['predictions'])
+        self.model.test_matrix = confusion_matrix(self.clean_df['sentiment'], self.clean_df['predictions'])
+        self.print_results()
+        self.manager.save_model()
+
+    def print_results(self):
+        print(f"Accuracy : {round (self.model.test_score * 100, 2)}%\n\n"
+              f"Confusion matrix:\n{self.model.test_matrix}\n"
+              f"Output created in {OUTPUT_PATH.format(category=self.category)}")
+
     def save_predictions(self, predictions):
         self.clean_df['predictions'] = predictions
         self.clean_df.to_csv(OUTPUT_PATH.format(category=self.category))
 
-    def _fetch_model(self, model):
-        models = self.manager.load_models()
-        model_selected = self.model_selector.selector.get(model)[0]
-        for model in models:
-            if model.type == model_selected:
+    def _fetch_model(self, model_selected):
+        self.manager.models = self.manager.load_models()
+        for model in self.manager.models:
+            if model.name == model_selected:
                 model_selected = model
                 continue
-
         return model_selected
 
 
