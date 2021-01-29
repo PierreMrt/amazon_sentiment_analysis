@@ -12,7 +12,7 @@ results obtained through the training of the different machine learning classifi
 ### Data exploration
 1. analysis of review numbers
 2. sentiment wordclouds and word frequency
-3. wordclouds removing common words in between sentiments
+3. most frequent words after a negation 
 
 ##### Review numbers:
 ![Figure_1](https://user-images.githubusercontent.com/69766734/106306773-c9fa3d00-625e-11eb-9751-4cdf769f440a.png)
