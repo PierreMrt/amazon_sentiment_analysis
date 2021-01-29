@@ -3,11 +3,10 @@ import run
 
 if __name__ == '__main__':
 
-    # sys.argv = ['', 'test_model']
     func = sys.argv[1]
 
     try:
-        method = run.__dict__.get(func)
+        method = run.functions[func]
         method()
     except TypeError:
         print("Selected functionality does not exist. Please select from the following:\n"

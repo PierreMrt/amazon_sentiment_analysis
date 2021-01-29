@@ -4,11 +4,12 @@ from model_creation.model_manager import ModelManager
 from model_creation.model_builder import ModelBuilder
 from model_creation.model_testing import ModelTest
 from analysis_and_visualization.data_exploration import explore_data
+from analysis_and_visualization.results_analysis import results
 
 
 TRAINING_CATEGORY = 'computers'
 TESTING_CATEGORY = 'cellphones'
-TESTED_MODEL = 'support_vector'
+TESTED_MODEL = 'passive_aggressive'
 
 
 def scraping():
@@ -41,4 +42,14 @@ def data_exploration():
 
 
 def analyze_results():
-    pass
+    results()
+
+
+functions = {
+    'scraping': scraping,
+    'cleaning': cleaning,
+    'create_models': create_models,
+    'test_model': test_model,
+    'data_exploration': data_exploration,
+    'analyze_results': analyze_results
+        }
