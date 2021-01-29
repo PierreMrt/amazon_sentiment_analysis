@@ -26,14 +26,14 @@ However, if we look a bit more at the frequency of these words, we can see for e
 
 As the negations were all normalized into 'not', it is not surprising to see it as the top word for each category. But let's dive a bit deeper into what it means.
 
-__________________
-
 ##### Word frequency following a negation:
 ![Figure_3](https://user-images.githubusercontent.com/69766734/106306772-c9fa3d00-625e-11eb-8c20-52435331acf7.png)
 
 From this figure we can see that the meaning of these two words sentences express much stronger feeling for the negative reviews. Indeed, even if 'not sure', 'not really' or even 'not like' and 'not work' are not exactly positive, 'not buy', 'not even' and 'not clearer' are more clearer about the sentiment of the review. We can also see that the laters are much  more frequent.
 
 This means that the negation are important and that it was correct to remove them from the sop words while cleaning the data and keeping them. However, we need to take this parameter in consideration when building the models and that is why we will use a n_gram range of 1 to 2, meaning that we will look at each word separately, but also in batch of 2.
+
+___________________
 
 ### Results of the models
 
