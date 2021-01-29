@@ -26,6 +26,8 @@ However, if we look a bit more at the frequency of these words, we can see for e
 
 As the negations were all normalized into 'not', it is not surprising to see it as the top word for each category. But let's dive a bit deeper into what it means.
 
+__________________
+
 ##### Word frequency following a negation:
 ![Figure_3](https://user-images.githubusercontent.com/69766734/106306772-c9fa3d00-625e-11eb-8c20-52435331acf7.png)
 
