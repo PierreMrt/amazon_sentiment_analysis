@@ -1,8 +1,8 @@
 import csv
 import pickle
 
-OUTPUT_PATH = 'review_scrapping/data/{category}_raw_output.csv'
-CACHED_PATH = 'review_scrapping/data/{category}_cache'
+OUTPUT_PATH = 'review_scraping/data/{category}_raw_output.csv'
+CACHED_PATH = 'review_scraping/data/{category}_cache'
 
 
 class DataCreator:

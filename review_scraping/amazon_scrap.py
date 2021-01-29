@@ -3,7 +3,7 @@ from selenium.common import exceptions
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
-from review_scrapping.create_dataset import DataCreator
+from review_scraping.create_dataset import DataCreator
 
 
 REVIEW_URL = ("https://www.amazon.com/product-reviews/{item_id}/ref=acr_dp_hist_5?ie=UTF8&filterByStar="
