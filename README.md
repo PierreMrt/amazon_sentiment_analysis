@@ -31,7 +31,7 @@ The first part is to create a dataset for which we already have labels (rating).
 
 Here we scraped the first 100 pages of items in the computers category of Amazon. For each of these items, we fetch the first 10 reviews of each stars, which allows us to create a dataset of almost 20 000 different reviews.
 
-[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/review_scraping)
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/review_scraping#amazon-reviews-scraping)
 
 ### Data cleaning
 Once we have a large dataset, the next part is to clean it. Indeed when we work with NLP it is important to have normalized data. The main steps are as follow:
@@ -40,12 +40,12 @@ Once we have a large dataset, the next part is to clean it. Indeed when we work 
 3. Normalize the case (evry words need to be in lower case)
 4. Remove stop words
 
-[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/data_cleaning)
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/data_cleaning#data-cleaning)
 
 ### Data exploration
 This part is about understanding our dataset and identify potential trends in it, in order choose the best parameters for our ML classifiers.
 
-[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization)
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization#data-exploration-and-classifier-analysis)
 
 ### Models creation and testing
 We train 6 different ML classifiers with scikit learn:
@@ -58,12 +58,12 @@ We train 6 different ML classifiers with scikit learn:
 
 Based on the preliminary results, we can then test our best model against new data, to check how it would behave in a real scenario.
 
-[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/model_creation)
+[More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/model_creation#building-and-training-the-classifiers)
 
 ### Results analysis
 How did each the 6 models fared ? Which one performed the best ?
 
-[See the results here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization)
+[See the results here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization#results-of-the-models)
 
 ### Utilisation
 To Launch the initial scraping: 
@@ -83,9 +83,6 @@ To test one of the model:
 
 To view the results analysis:
 `python main.py analyze_results`
-
-### Requirements
-
 
 ### License
 
