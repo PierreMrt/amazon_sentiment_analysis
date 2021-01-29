@@ -1,3 +1,6 @@
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:merlet.pierre@outlook.com)
+
 # Data exploration and classifier analysis
 
 First part is about analyzing the cleaned version of the reviews scraped from Amazon, second is about analyzing the 
