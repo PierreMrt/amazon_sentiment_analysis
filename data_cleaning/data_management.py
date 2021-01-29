@@ -1,7 +1,7 @@
 import pandas as pd
 from data_cleaning.data_cleaner import DataCleaner
 
-INPUT_PATH = 'review_scrapping/data/{category}_raw_output.csv'
+INPUT_PATH = 'review_scraping/data/{category}_raw_output.csv'
 OUTPUT_PATH = 'data_cleaning/data/{category}_cleaned_output.csv'
 
 
@@ -21,6 +21,7 @@ class DataManager:
 
     def save_dataframe(self, df):
         df.to_csv(OUTPUT_PATH.format(category=self.category))
+        print(f"Output created in {OUTPUT_PATH.format(category=self.category)}")
 
     def create_lists(self):
         for index, row in self.df.iterrows():
