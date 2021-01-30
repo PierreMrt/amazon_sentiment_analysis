@@ -19,9 +19,20 @@ text (positive or negative).
  
     `parameters: max_df=0.7, ngram_range=(1, 2)`
 
+As we saw during the exploratory analysis, it important to clear the words that appear too often in both sentiments, such as 'computer', 'laptop' etc.. 
+That's why 0.7 is a good parameter for the max_df. It means that words that appear in 70% or more of the reviews won't be taken into consideration by the vectorizer. 
+
+Moreover, we saw that the negations were quite important to get the meaning of a sentence, and this is the reason for a ngram range of 1 to 2. This way the vectorizer 
+will also look at the word sequence, vectorizing up to 2 words together and thus, not loosing the meaning of the negations. 
+
 * Separating training and testing data
 
     `parameters: test_size=0.2, random_state=7`
+
+80% of the reviews being used as a training set, and therefore 20% for testing the models, is a good balance between letting a lot of data for the algorithms to train,
+ without overfitting our models. 
+
+Secondly, a random state of 7 allows to remove the randomness of this separation, to be able to run this multiple times and reproduce the same results. 
 
 * Fit and transform training set
 
