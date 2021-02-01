@@ -105,8 +105,7 @@ On the other hand, it could also be possible to train the models on multiple cat
 
 Another solution to further improve the performances would be to use multiple classifiers at the same time and choose the best one for each reviews.
 
-
-
+However, as is, it is already possible for a company to go on Twitter or other social platforms to scrap the reviews concerning their products, and use this as the base to assess the sentiment of these reviews, and thus take action accordingly.
 
 
 
