@@ -56,8 +56,8 @@ Secondly, a random state of 7 allows to remove the randomness of this separation
 
 ### Results:
 
-[Find out which model was selected and check the results here !](
-https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization)
+[Find out how each model performed, check the results here !](
+https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization#results-of-the-models)
 
 ### Utilisation:
 From the Amazon_sentiment_analysis folder: `python main.py create_models`
