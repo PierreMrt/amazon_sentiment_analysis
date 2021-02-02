@@ -66,6 +66,10 @@ How did each the 6 models fared ? Which one performed the best ?
 [See the results here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization#results-of-the-models)
 
 ### Utilisation
+All the commands below must be launched independently. You can also take the data from this repository directly, without having to run the program. For example you can skip the scraping and the cleaning by taking the cleaned data in `data_cleaning\data`. 
+
+The only command that is necessary to launch is the one to create the models, as the resulting file is too big to host on github.
+
 To Launch the initial scraping: 
 `python main.py scraping`
 
@@ -84,27 +88,5 @@ To test one of the model:
 To view the results analysis:
 `python main.py analyze_results`
 
-### License
 
->MIT License
->
->Copyright (c) 2021 Pierre Merlet
->
->Permission is hereby granted, free of charge, to any person obtaining a copy
->of this software and associated documentation files (the "Software"), to deal
->in the Software without restriction, including without limitation the rights
->to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
->copies of the Software, and to permit persons to whom the Software is
->furnished to do so, subject to the following conditions:
->
->The above copyright notice and this permission notice shall be included in all
->copies or substantial portions of the Software.
->
->THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
->IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
->FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
->AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
->LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
->OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
->SOFTWARE.
 
