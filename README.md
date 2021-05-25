@@ -36,13 +36,13 @@ Here we scraped the first 100 pages of items in the computers category of Amazon
 Once we have a large dataset, the next part is to clean it. Indeed when we work with NLP it is important to have normalized data. The main steps are as follow:
 1. Tokenize the text
 2. Remove punctuation and other special characters
-3. Normalize the case (evry words need to be in lower case)
+3. Normalize the case (every words need to be in lower case)
 4. Remove stop words
 
 [More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/data_cleaning#data-cleaning)
 
 ### Data exploration
-This part is about understanding our dataset and identify potential trends in it, in order choose the best parameters for our ML classifiers.
+This part is about understanding our dataset and identify potential trends in it, in order to choose the best parameters for our ML classifiers.
 
 [More details here.](https://github.com/PierreMrt/Amazon_sentiment_analysis/tree/main/analysis_and_visualization#data-exploration-and-classifier-analysis)
 
